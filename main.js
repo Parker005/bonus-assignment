@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Smooth scrolling for internal anchor links
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -14,14 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Handle project links
+    
     const projectLinks = document.querySelectorAll('.project-link');
     projectLinks.forEach(link => {
         link.addEventListener('click', function (e) {
-            const url = this.dataset.url; // Get URL from data-url attribute
+            const url = this.dataset.url; 
             
             if (url) {
-                window.open(url, '_blank'); // Open link in a new tab
+                window.open(url, '_blank'); 
             }
         });
     });
